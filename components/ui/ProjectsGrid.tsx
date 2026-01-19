@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, Code } from 'lucide-react';
+import { Github, Code } from 'lucide-react';
 import { projects } from '@/data/projects';
 
 export function ProjectsGrid() {

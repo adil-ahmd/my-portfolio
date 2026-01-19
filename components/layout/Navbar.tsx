@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Github, Linkedin } from 'lucide-react';
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -54,17 +54,17 @@ export function Navbar() {
           {/* Social Icons (Desktop) */}
           <div className="hidden md:flex items-center space-x-4">
             <motion.a
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.4 }}
-                href="https://github.com/adil-ahmd" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4 }}
+              href="https://github.com/adil-ahmd" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <Github size={20} />
             </motion.a>
             <motion.a
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5 }}
-                href="https://linkedin.com/in/adilahmd" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5 }}
+              href="https://linkedin.com/in/adilahmd" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <Linkedin size={20} />
             </motion.a>
           </div>

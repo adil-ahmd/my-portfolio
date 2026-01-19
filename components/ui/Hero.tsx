@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
+import Image from 'next/image';
 
 export function Hero() {
     return (
@@ -18,10 +19,11 @@ export function Hero() {
                 >
                     <div className="w-32 h-32 md:w-40 md:h-40 mx-auto relative group">
                         <div className="absolute inset-0 bg-electric-blue rounded-full blur-xl opacity-50 group-hover:opacity-80 transition-opacity" />
-                        <img
+                        <Image
                             src="/images/profile.jpg"
                             alt="Adil Ahamed"
-                            className="relative w-full h-full object-cover rounded-full border-2 border-white/20"
+                            fill
+                            className="object-cover rounded-full border-2 border-white/20"
                         />
                     </div>
                 </motion.div>
@@ -42,7 +44,7 @@ export function Hero() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
                 >
-                    Hi, I'm <span className="text-white relative">Adil Ahamed</span>
+                    Hi, I&apos;m <span className="text-white relative">Adil Ahamed</span>
                 </motion.h1>
 
                 <motion.p
@@ -51,7 +53,7 @@ export function Hero() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
                 >
-                    Master's in AI, ML & Data Science. Building intelligent systems,
+                    Master&apos;s in AI, ML & Data Science. Building intelligent systems,
                     predictive models, and scalable web solutions.
                 </motion.p>
 
@@ -69,7 +71,8 @@ export function Hero() {
                         <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                     </a>
                     <a
-                        href="/resume.pdf" // Placeholder for resume
+                        href="/resume.pdf"
+                        download
                         className="px-8 py-3 bg-white/5 border border-white/10 text-white rounded-full font-medium transition-all hover:bg-white/10 hover:scale-105 flex items-center gap-2"
                     >
                         Download Resume
